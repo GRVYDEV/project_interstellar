@@ -43,7 +43,7 @@ fn not_found(req: &Request) -> Template {
 fn rocket() -> rocket::Rocket {
     rocket::ignite()
         .mount("/", routes![index, get])
-        .mount("/public", StaticFiles::from(concat!(env!("CARGO_MANIFEST_DIR"), "/assets")))
+        .mount("/public", StaticFiles::from(concat!(env!("CARGO_MANIFEST_DIR"), "/public")))
         .attach(Template::fairing())
         .register(catchers![not_found])
 }
