@@ -1,0 +1,6 @@
+{% extends "base" %}
+
+{% block content %}
+    
+    <p class="test">Try going to <a href="/hello/YourName">/hello/YourName</a></p>
+{% endblock content %}
