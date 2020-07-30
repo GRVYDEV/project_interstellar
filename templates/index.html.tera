@@ -1,6 +1,49 @@
 {% extends "base" %}
 
 {% block content %}
-    
-    <p class="text-red-900">Try going to <a href="/hello/YourName">/hello/YourName</a></p>
+    <nav>
+        <div class="flex flex-row primary-bg h-12 w-full px-2 pt-4 justify-between">
+            <div class="flex w-1/5  justify-center "><a href="/" class="text-white font-black text-2xl">GRVY.</a></div>
+            <div class="flex w-2/5  flex-row justify-evenly">
+                <div class="flex"><a href="/" class="text-white text-xl">Home</a></div>
+                <div class="flex"><a href="/" class="text-white text-xl">Blog</a></div>
+                <div class="flex"><a href="/" class="text-white text-xl">About Me</a></div>
+                <div class="flex"><a href="/" class="text-white text-xl">Contact Me</a></div>
+            </div>
+        </div>
+    </nav>
+    <div class="primary-bg body-full flex-col px-24 ">
+        <div class="flex flex-row w-full relative min-h-full justify-center">
+        
+            <div class="flex flex-col w-1/2 justify-center z-10">
+                <h1 class=" text-white text-center font-semibold text-6xl mb-12">
+                    <span
+                        class="txt-rotate"
+                        data-period="500"
+                        data-rotate='[ "Developer.", "Gamer.", "Nerd.", "PC Enthusiast."]'></span>
+                </h1>
+
+                <h3 class="text-white w-2/3 mx-auto text-center text-3xl z-10">The man of many hats. Keep scrolling to learn more!</h3>
+            </div>
+            <div class=" flex w-1/2 z-10 rellax">
+                <img class="w-full h-auto object-contain " src="/public/images/RoomRender.png">
+            </div>
+        </div>
+        <div class="shapes overflow-hidden">
+            <div class="shape rellax"></div>
+            <div class="shape rellax" data-rellax-speed="-3"></div>
+        </div>
+    </div>
+    <div class="secondary-bg min-h-screen flex-col px-24 relative">
+       <div class="shapes overflow-hidden">
+            <div class="shape2 rellax" data-rellax-speed="-3"></div>
+            <div class="shape2 rellax" data-rellax-speed="-3"></div>
+        </div>
+        
+    </div>
+
+    <script>
+        var rellax = new Rellax('.rellax');
+    </script>
+
 {% endblock content %}

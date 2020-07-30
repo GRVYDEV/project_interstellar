@@ -5,7 +5,7 @@
   "private": "true",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "digest": "parcel build js/index.js --out-dir ../public"
+    "digest": "parcel watch js/index.js --out-dir ../public --public-url public"
   },
   "keywords": [],
   "author": "",
